@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Montserrat:wght@600&family=Philosopher:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>Регистрация</title>
+</head>
+<body>
+
+    <header class="header fixed">
+        <div class="container">
+            <div class="header__inner">
+                <a href="../index.html">
+                    <img class="header__logo" src="../assets/img/Logo.png" alt="Максимус">
+                </a>
+    
+                <nav class="nav" id="nav">
+                    <a class="nav_link" href="../index.html#about">О нас</a>
+                    <a class="nav_link" href="../index.html#services">Услуги и цены</a>
+                    <a class="nav_link" href="../index.html#photo">фотоальбом</a>
+                    <a class="nav_link" href="../index.html#contact">Контакты</a>
+                    <a class="nav_link" href="./auth/signin.html">Войти</a>
+
+                    <a class="nav_hidden" href="#">
+                        <img src="../assets/img/Х.svg" alt="X">
+                    </a>
+
+                    <div class="header_contact">
+                        <img class="tel_ico" src="../assets/img/Phone.png" alt="phone">
+                        <div class="header_info">
+                            <div class="phone">
+                                <a class="tel" href=”tel:+375000000000”>+375 (00) 000-00-00</a>
+                            </div>
+                            <div class="schedule">
+                                Eжедневно 9:00 - 22:00
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <div class="burger_menu">
+                    <img src="../assets/img/Menu.svg" alt="menu">
+                </div>
+                
+            </div>
+        </div>
+    </header>
+
+
+    <setcion class="auth">
+        <h1 class="page__title page__title--center">Регистрация</h1>
+
+        <form  class="form form--auth" action="/" method="POST">
+            <div class="form__group form__group--md"><!--1-->
+                <input class="form__control" type="email" placeholder="Ваш e-mail">
+                <span class="form__line"></span>
+            </div>
+            <div class="form__group form__group--md"><!--2-->
+                <input class="form__control" type="password" placeholder="Пароль">
+                <span class="form__line"></span>
+            </div>
+            <div class="form__group form__group--md"><!--2-->
+                <input class="form__control" type="password" placeholder="Подтвердите пароль">
+                <span class="form__line"></span>
+            </div>
+    
+    
+            <div class="form__footer form__footer--center">
+                <div class="form__group form__group--md">
+                    <button class=" btn btn_auth" type="submit">Регистрация</button>
+                </div>
+                
+                <ul class="form__footer-list">
+                    <li>
+                        Уже есть аккаунт? 
+                        <a href="signin.html">Войти</a>
+                    </li>
+                </ul>
+            </div>
+        </form>
+    </setcion>
+    
+    
+</body>
+</html>
